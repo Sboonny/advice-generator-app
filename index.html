@@ -34,10 +34,11 @@
         <!-- Advice text goes here -->
         <p class="text-cyan letter-spacing-3 fs-500 advice-content"></p>
       </article>
-      <picture
-        media="(min-width: 35em)"
-        srcset="images/pattern-divider-desktop.svg"
-      >
+      <picture>
+        <source
+          media="(min-width: 35em)"
+          srcset="images/pattern-divider-desktop.svg"
+        />
         <img src="images/pattern-divider-mobile.svg" />
       </picture>
       <button onclick="getAdvice()" class="button">
