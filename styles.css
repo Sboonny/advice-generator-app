@@ -253,6 +253,7 @@ select {
   text-transform: uppercase;
   letter-spacing: 2.72px;
   color: hsl(var(--clr-green));
+  font-weight: 600;
 }
 .advice-content {
   margin-inline: 3rem;
@@ -264,5 +265,3 @@ select {
 .advice-content::before {
   content: "“";
 }
-
-
