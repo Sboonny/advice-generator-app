@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Frontend Mentor | Advice generator app</title>
+    <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<script src="data.js" defer></script>
-</head>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="data.js" defer></script>
+  </head>
 
-<body>
-  <main>
-    <div>
-      <article>
+  <body class="primary-container flex">
+    <main class="bg-darkgray flex card">
+      <article class="flex card-content">
         <!-- Advice ID goes here -->
-        <h1></h1>
+        <h1 class="advice-id"></h1>
         <!-- Advice text goes here -->
-        <p></p>
+        <p class="text-cyan letter-spacing-3 fs-500 advice-content"></p>
       </article>
-      <button><img src="images/icon-dice.svg"></button>
-      <picture media="(min-width: 35em)" srcset="images/pattern-divider-desktop.svg">
-        <img src="images/pattern-divider-mobile.svg">
-    </div>
-    </picture>
-  </main>
-</body>
-
+      <picture
+        media="(min-width: 35em)"
+        srcset="images/pattern-divider-desktop.svg"
+      >
+        <img src="images/pattern-divider-mobile.svg" />
+      </picture>
+      <button onclick="getAdvice()" class="button">
+        <img src="images/icon-dice.svg" />
+      </button>
+    </main>
+  </body>
 </html>
